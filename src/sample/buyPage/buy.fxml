@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.buyPage.BuyController">
+   <children>
+      <Button fx:id="btnBack" layoutX="16.0" layoutY="14.0" mnemonicParsing="false" text="&lt;&lt; Назад" />
+      <VBox layoutX="16.0" layoutY="46.0" prefHeight="266.0" prefWidth="569.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="569.0" text="Для того, чтобы купить, выберите модель и нажмите купить. Спасибо за использование нашего магазина!" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <ListView fx:id="cars" prefHeight="220.0" prefWidth="569.0" />
+         </children>
+      </VBox>
+      <Button fx:id="buyCarBtn" layoutX="268.0" layoutY="312.0" mnemonicParsing="false" text="Купить" />
+   </children>
+</AnchorPane>
