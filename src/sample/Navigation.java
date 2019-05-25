@@ -6,8 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.List;
 
 public class Navigation {
 
-    private static final Logger LOGGER = LogManager.getLogger(Navigation.class.getName());
+//    private static final Logger LOGGER = LogManager.getLogger(Navigation.class.getName());
     private final Stage stage;
     private final Scene scene;
 
@@ -41,7 +41,7 @@ public class Navigation {
             return controller;
 
         } catch(Exception e) {
-            LOGGER.error(e);
+
         }
         return null;
     }
@@ -53,7 +53,7 @@ public class Navigation {
             controllers.add(controller);
         }
         catch(Exception e) {
-            LOGGER.error(e.getMessage());
+//            LOGGER.error(e.getMessage());
         }
     }
 
